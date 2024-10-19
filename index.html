@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sub-heading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">stock market investments is subject to market risks.</h1>
+    <h2 class="sub-heading">the lamp is low</h2>
+    <h2 class="sub-heading">is this code can be developed by u uh?</h2>
+    <h2 class="sub-heading">this code was written by me!</h2>
+    <h3>brue wayne</h3>
+    <h3>deadpool and wolverine</h3>
+    <h3>this is the third line bruh!</h3>
+    <h1>javascript is a dynamic language bro</h1>
+    <span class="sub-text">bmw</span>
+    <span class="sub-text">porsche</span>
+    <span class="sub-text">audi</span>
+    <span class="sub-text">jaquar</span>
+    <span class="sub-text">bentley</span>
+    <h5 id="main-heading">my favorite hobby is watching batman</h5>
+
+    <script>
+      // Select Element by ID
+      // Create an HTML element with a unique ID .
+      // Use document.getElementById to select the element.
+      // Change the style of the selected element (e.g., change the background color and font size)
+      document.getElementById("heading").style.backgroundColor = "pink";
+      document.getElementById("heading").style.fontSize = "100px";
+      // Select Elements by Class Name
+      // Create multiple HTML elements with the same class name..
+      // Use document.getElementsByClassName to select the elements.
+      // Change the style of the selected elements (e.g., change the text color).
+      document.getElementsByClassName("sub-heading")[0].style.color = "purple";
+      document.getElementsByClassName("sub-heading")[1].style.color = "blue";
+      // Select Elements by Tag Name
+      // Create multiple HTML elements of the same tag name.
+      // Use document.getElementsByTagName to select the elements.
+      // Change the style of the selected elements (e.g., add a border).
+      document.getElementsByTagName("h3")[0].style.border = "3px solid red";
+      document.getElementsByTagName("h3")[1].style.border = "4px solid purple";
+      document.getElementsByTagName("h3")[2].style.border = "2px blue solid";
+      //       Select Element by Query Selector
+      // Create an HTML element with a nested structure.
+      // Use document.querySelector to select a specific element within the structure.
+      // Change the style of the selected element (e.g., change the font style).
+      document.querySelector("h5").style.fontStyle = "italic";
+      //       Select Elements by Query Selector All
+      // Create multiple HTML elements with a similar attribute (e.g., multiple span elements with a class item).
+      // Use document.querySelectorAll to select the elements.
+      // Change the style of the selected elements (e.g., change the margin).
+      const items = document.querySelectorAll(".sub-text");
+      items.forEach(item => {
+            item.style.margin = "20px"; 
+        });
+
+      // Change Styles of Selected Elements
+      // Create a unique element that represents something about you (e.g., a favorite quote, hobby, or place).
+      // Use JavaScript to style this element.
+      let hobby = document.querySelector("#main-heading");
+      hobby.style.backgroundColor = "grey";
+      hobby.style.padding = "20px";
+      hobby.style.marginTop = "100px";
+      hobby.style.marginLeft = "320px";
+      hobby.style.width = "800px";
+      hobby.style.textAlign = "center";
+      hobby.style.fontSize = "100px";
+    </script>
+  </body>
+</html>
